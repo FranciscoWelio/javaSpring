@@ -4,17 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class User {
+public class Usuario {
     @Id
     Long id;
     String nome;
     String conta;
-    Card card;
-
-    
-    public User(Card card) {
-        this.card = card;
-    }
+   
     public Long getId() {
         return id;
     }
