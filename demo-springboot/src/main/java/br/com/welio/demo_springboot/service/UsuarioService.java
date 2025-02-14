@@ -13,7 +13,11 @@ public class UsuarioService{
 	UsuarioRepository usuarioRepository;
 
     public Usuario addUsuario(Usuario usuario){
-        boolean jaExiste ;
+        boolean jaExiste = usuarioRepository.existsById(usuario.getId());
+
+		if(jaExiste==true){
+			
+		}
         return usuario;
     }
 
