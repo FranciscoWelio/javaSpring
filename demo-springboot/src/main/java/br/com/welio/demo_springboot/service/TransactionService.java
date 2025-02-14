@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import br.com.welio.demo_springboot.Transaction;
+import br.com.welio.demo_springboot.entity.Transaction;
 import br.com.welio.demo_springboot.repository.TransactionRepository;
 
 @Service

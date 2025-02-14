@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import br.com.welio.demo_springboot.Merchant;
+import br.com.welio.demo_springboot.entity.Merchant;
 import br.com.welio.demo_springboot.repository.MerchantRepository;
 
 @Service

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.welio.demo_springboot.Usuario;
+import br.com.welio.demo_springboot.entity.Usuario;
 import br.com.welio.demo_springboot.service.UsuarioService;
 
 import org.springframework.web.bind.annotation.PostMapping;

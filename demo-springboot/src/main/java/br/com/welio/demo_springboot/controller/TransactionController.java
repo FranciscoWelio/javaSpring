@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.welio.demo_springboot.Transaction;
+import br.com.welio.demo_springboot.entity.Transaction;
 import br.com.welio.demo_springboot.service.TransactionService;
 @RestController
 @RequestMapping("/transaction")

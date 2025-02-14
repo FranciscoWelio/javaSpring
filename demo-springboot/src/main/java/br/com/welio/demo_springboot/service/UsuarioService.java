@@ -5,7 +5,8 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import br.com.welio.demo_springboot.Usuario;
+import br.com.welio.demo_springboot.entity.Usuario;
+import br.com.welio.demo_springboot.exception.UsuariosException;
 import br.com.welio.demo_springboot.repository.UsuarioRepository;
 
 @Service
@@ -16,8 +17,10 @@ public class UsuarioService{
         boolean jaExiste = usuarioRepository.existsById(usuario.getId());
 
 		if(jaExiste==true){
-			
+			throw new UsuariosException("Usuário Cadastrado");
 		}
+		usuario = usuarioRepository.save(usuario);
+
         return usuario;
     }
 

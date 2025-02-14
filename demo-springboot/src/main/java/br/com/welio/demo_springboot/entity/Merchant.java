@@ -1,4 +1,4 @@
-package br.com.welio.demo_springboot;
+package br.com.welio.demo_springboot.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
