@@ -2,10 +2,10 @@ package br.com.welio.demo_springboot.service;
 
 import java.util.Optional;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import br.com.welio.demo_springboot.Merchant;
+import br.com.welio.demo_springboot.repository.MerchantRepository;
 
 @Service
 public class MerchantService{
@@ -20,6 +20,3 @@ public class MerchantService{
 	}
 }
 
-interface MerchantRepository extends JpaRepository<Merchant, Long>{
-
-}

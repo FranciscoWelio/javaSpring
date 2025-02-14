@@ -2,10 +2,10 @@ package br.com.welio.demo_springboot.service;
 
 import java.util.Optional;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import br.com.welio.demo_springboot.Transaction;
+import br.com.welio.demo_springboot.repository.TransactionRepository;
 
 @Service
 public class TransactionService{
@@ -18,8 +18,4 @@ public class TransactionService{
 	public Optional<Transaction> getTransaction(Long id){
 		return transactionRepository.findById(id);
 	}
-}
-
-interface TransactionRepository extends JpaRepository<Transaction, Long>{
-
 }
