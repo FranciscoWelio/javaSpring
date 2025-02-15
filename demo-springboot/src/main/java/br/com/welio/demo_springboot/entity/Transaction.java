@@ -6,11 +6,11 @@ import jakarta.persistence.Id;
 @Entity
 public class Transaction {
     @Id
-    Long id;
-    String account;
-    double amount;
-    String mcc;
-    String merchant;
+    private Long id;
+    private String account;
+    private double amount;
+    private String mcc;
+    private String merchant;
     public long getId() {
         return id;
     }

@@ -17,10 +17,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 class UsuarioController{
 	UsuarioService usuarioService;
 
-	@PostMapping
+	@PostMapping("/create-user")
+	
 	public Usuario addUsuario(@RequestBody Usuario usuario) {
 		
-		return usuario;
+		return usuarioService.addUsuario(usuario);
 	}
 	
 	

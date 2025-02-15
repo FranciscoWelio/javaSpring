@@ -6,10 +6,10 @@ import jakarta.persistence.Id;
 @Entity
 public class Merchant {
     @Id
-    Long id;
-    String tipo;
-    String nome;
-    String localizacao;
+    private Long id;
+    private String tipo;
+    private String nome;
+    private String localizacao;
     public Long getId() {
         return id;
     }
